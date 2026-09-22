@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Relatório Executivo - Case Vértice Retail</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Relatório Executivo - Case Vértice Retail</h1>
+</header>
+<h1 id="relatório-executivo-de-diagnóstico-estratégico-case-vértice-retail">Relatório Executivo de Diagnóstico Estratégico: Case Vértice Retail</h1>
+<h2 id="bootcamp-nova-geração-ai-consulting-lab-elogroup-2026">BootCamp Nova Geração — AI Consulting Lab | EloGroup (2026)</h2>
+<p><strong>Equipe / Grupo 18:</strong> Ingrid Soares • Pedro Ribeiro (<span class="citation" data-cites="pedrorpr">[@pedrorpr]</span>(https://github.com/pedrorpr))<br />
+<strong>Mentoria Técnica:</strong> EloGroup<br />
+<strong>Data da Entrega:</strong> 21 de Setembro de 2026<br />
+<strong>Data da Banca / Pitch Final:</strong> 23 de Setembro de 2026<br />
+<strong>Entregável Oficial:</strong> Diagnóstico Estratégico, Análises Quantitativas, Solução com IA e Business Case</p>
+<hr />
+<h3 id="sumário-executivo-indicadores-estratégicos-kpis">Sumário Executivo &amp; Indicadores Estratégicos (KPIs)</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Indicador Estratégico</th>
+<th style="text-align: center;">Valor Apurado (Dados Reais)</th>
+<th style="text-align: center;">Benchmark / Alvo</th>
+<th style="text-align: center;">Variação / Desvio</th>
+<th style="text-align: left;">Impacto Econômico e Operacional</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Faturamento Bruto Anual</strong></td>
+<td style="text-align: center;"><strong>R$ 20.526.133,84</strong></td>
+<td style="text-align: center;">R$ 20.000.000,00</td>
+<td style="text-align: center;">+2,6%</td>
+<td style="text-align: left;">Escala comercial forte puxada por omnicanalidade</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Margem de Contribuição Média</strong></td>
+<td style="text-align: center;"><strong>54,37% (R$ 10,27M)</strong></td>
+<td style="text-align: center;">&gt; 50,0%</td>
+<td style="text-align: center;">+4,37 p.p.</td>
+<td style="text-align: left;">Margem bruta teórica saudável nos produtos</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Estoque Físico a Custo</strong></td>
+<td style="text-align: center;"><strong>R$ 348.701.550,87</strong></td>
+<td style="text-align: center;">~R$ 4.000.000,00</td>
+<td style="text-align: center;"><strong>+8.617%</strong></td>
+<td style="text-align: left;"><strong>42,1 anos de cobertura</strong> (1,67M peças vs 97k vendas)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Giro Anual do Estoque</strong></td>
+<td style="text-align: center;"><strong>0,06x / ano</strong></td>
+<td style="text-align: center;">3,0x a 4,0x</td>
+<td style="text-align: center;"><strong>-98,0%</strong></td>
+<td style="text-align: left;">Dias de cobertura mediano de 6.142 dias (~16,8 anos)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Taxa de Devolução</strong></td>
+<td style="text-align: center;"><strong>14,87% (4.127 pedidos)</strong></td>
+<td style="text-align: center;">&lt; 6,0%</td>
+<td style="text-align: center;"><strong>+147,8%</strong></td>
+<td style="text-align: left;"><strong>R$ 1,52 milhão em margem sacrificada</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Devoluções por Falhas Operacionais</strong></td>
+<td style="text-align: center;"><strong>69,6% das devoluções</strong></td>
+<td style="text-align: center;">&lt; 20,0%</td>
+<td style="text-align: center;"><strong>+248,0%</strong></td>
+<td style="text-align: left;">Defeitos (25,2%), tamanhos (24,8%) e atrasos (19,6%)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Custo de Customer Service</strong></td>
+<td style="text-align: center;"><strong>R$ 532.260,00 (35,8k tkts)</strong></td>
+<td style="text-align: center;">R$ 200.000,00</td>
+<td style="text-align: center;"><strong>+166,1%</strong></td>
+<td style="text-align: left;">135 minutos de espera média com CSAT 3,24/5,00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Tickets de Rastreio (“Onde está?”)</strong></td>
+<td style="text-align: center;"><strong>30,0% (10.765 chamados)</strong></td>
+<td style="text-align: center;">&lt; 5,0%</td>
+<td style="text-align: center;"><strong>+500,0%</strong></td>
+<td style="text-align: left;">R$ 159.660 gastos com atendentes humanos manuais</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Oportunidade Total de Captura</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><strong>&gt; R$ 78,0 MILHÕES</strong> (R$ 69,7M caixa + R$ 8,3M margem/ano)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="contexto-do-negócio-o-paradoxo-do-crescimento">1. Contexto do Negócio &amp; O Paradoxo do Crescimento</h2>
+<p>A <strong>Vértice Retail</strong> é uma marca digital de moda, beleza e lifestyle voltada para jovens adultos. Ao longo do último ano fiscal, a empresa atingiu <strong>R$ 20,53 milhões de faturamento bruto</strong>, processando 27.759 transações por meio de um mix agressivo de mídias pagas (<em>Google Ads</em>, <em>Instagram Ads</em>, <em>TikTok Ads</em>), <em>Influenciadores</em>, <em>Marketplace</em> e canais próprios (<em>E-mail</em> e <em>Orgânico</em>).</p>
+<p>No entanto, a Diretoria Executiva (CEO, CFO, CMO e COO) percebeu uma <strong>severa contração de rentabilidade e uma asfixia na geração de caixa livre</strong>. Os relatórios gerenciais da empresa eram manuais, os dados encontravam-se fragmentados entre departamentos e as decisões críticas de compras e operação vinham sendo tomadas com base em feeling e intuição.</p>
+<p>Este relatório responde diretamente à pergunta estratégica do case: &gt; <em>“Como podemos usar dados e IA para melhorar rentabilidade, eficiência operacional e qualidade da tomada de decisão nos próximos 90 dias?”</em></p>
+<hr />
+<h2 id="perfilamento-auditoria-de-dados-data-quality">2. Perfilamento &amp; Auditoria de Dados (Data Quality)</h2>
+<p>A consultoria conduziu uma auditoria forense nas cinco bases disponibilizadas: 1. <code>vendas.csv</code>: 27.759 transações (Jan/2023 a Jan/2024). 100% de integridade referencial com estoque e clientes. Detectou-se que 491 pedidos tiveram margem de contribuição negativa devido a frete subsidiado associado a cupons agressivos (&gt;20%). 2. <code>estoque.csv</code>: 5.000 SKUs ativos em snapshot físico. Custo médio unitário de R$ 207,63 e preço de venda sugerido médio de R$ 503,57. 3. <code>atendimento.csv</code>: 35.841 chamados de suporte (2023 a 2025). Custo operacional total de R$ 532.260. 4. <code>clientes.csv</code>: 15.000 clientes cadastrados. Identificou-se que o sistema de vendas agregou milhares de compras anônimas (“Guest Checkout”) sob o mesmo identificador (<code>CLI-11830</code> e <code>CLI-01729</code>). 5. <code>marketing.csv</code>: 3.500 campanhas por canal com ROAS médio de 4,18x.</p>
+<hr />
+<h2 id="achado-1-a-asfixia-do-capital-de-giro-por-superestocagem-crítica">3. Achado 1: A Asfixia do Capital de Giro por Superestocagem Crítica</h2>
+<p>A investigação aprofundada eliminou hipóteses superficiais (como suposta queda súbita nas vendas) e revelou um <strong>colapso no planejamento de suprimentos</strong>:</p>
+<ul>
+<li><strong>Estoque Físico Total:</strong> 1.671.577 peças físicas.</li>
+<li><strong>Volume Anualizado Vendido:</strong> 89.926 peças.</li>
+<li><strong>Valor do Estoque a Custo:</strong> <strong>R$ 348.701.550,87</strong>.</li>
+<li><strong>CMV Anual de Vendas:</strong> <strong>R$ 8.278.603,59</strong>.</li>
+<li><strong>Cobertura:</strong> <strong>42,1 anos de vendas</strong> em estoque no ritmo atual.</li>
+</ul>
+<p>O excesso de estoque concentra-se drasticamente na categoria <strong>Moda (864.572 peças — 51,7% do inventário total)</strong>. Além disso, <strong>82 SKUs encontram-se completamente paralisados</strong>, com zero peças vendidas em 13 meses, imobilizando <strong>R$ 6,68 milhões de caixa</strong>. O custo financeiro de carregar esse estoque ocioso representa <strong>R$ 38,3 milhões anuais</strong> de liquidez consumida a taxas de juros correntes (CDI 11% a.a.).</p>
+<hr />
+<h2 id="achado-2-a-erosão-invisível-da-margem-por-devoluções-operacionais">4. Achado 2: A Erosão Invisível da Margem por Devoluções Operacionais</h2>
+<p>A Vértice perde anualmente <strong>14,87% de tudo o que vende</strong> no pós-venda. Foram 4.127 pedidos devolvidos, correspondendo a <strong>R$ 2,82 milhões em vendas brutas canceladas</strong> e uma destruição líquida de <strong>R$ 1,52 milhão em margem de contribuição</strong>.</p>
+<p>Ao contrário do senso comum, as devoluções não decorrem de mero “arrependimento” do consumidor (apenas 14,2%). <strong>69,6% das devoluções (2.872 pedidos) são evitáveis e decorrem de ineficiências operacionais e técnicas</strong>: * <strong>Produto com Defeito (25,2% - 1.039 pedidos):</strong> Falta de homologação rigorosa de fornecedores de confecção e cosméticos. * <strong>Tamanho Errado (24,8% - 1.025 pedidos):</strong> Ausência de tabela de medidas interativa e provador virtual no e-commerce de moda. * <strong>Atraso na Entrega (19,6% - 808 pedidos):</strong> Ineficiência e falta de SLA estrito das transportadoras contratadas.</p>
+<hr />
+<h2 id="achado-3-a-ineficiência-analógica-do-atendimento-ao-cliente">5. Achado 3: A Ineficiência Analógica do Atendimento ao Cliente</h2>
+<p>O setor de Customer Service processou 35.841 chamados a um custo operacional de <strong>R$ 532.260</strong>, operando de maneira puramente reativa e manual: * <strong>30,0% do volume total (10.765 chamados)</strong> limita-se a responder à pergunta <em>“Onde está meu pedido?”</em>. * Esse processo manual consome <strong>R$ 159.660 anuais</strong> de salário/hora de operadores humanos, que levam em média <strong>135 minutos</strong> para localizar uma encomenda e repassar o status ao cliente. * O CSAT médio da operação encontra-se estagnado em <strong>3,24 / 5,00</strong>, gerando atrito e risco de churn na base de clientes.</p>
+<hr />
+<h2 id="proposta-da-solução-integrada-com-inteligência-artificial">6. Proposta da Solução Integrada com Inteligência Artificial</h2>
+<p>Para atacar as causas-raiz nos próximos 90 dias, desenhou-se uma <strong>Solução Dual de IA</strong>:</p>
+<h3 id="módulo-b-classificador-inteligente-agente-resolutivo-de-atendimento-whatsapp-chatbot">Módulo B: Classificador Inteligente &amp; Agente Resolutivo de Atendimento (WhatsApp / Chatbot)</h3>
+<ul>
+<li><strong>Função:</strong> Agente de IA generativa (LLM com function calling) conectado à API de transportadoras e ao ERP.</li>
+<li><strong>Mecanismo:</strong> Classifica a intenção do cliente, analisa sentimento e responde 80%+ das dúvidas de rastreamento em menos de 10 segundos, emitindo código de postagem reverso automaticamente para defeitos/trocas.</li>
+<li><strong>Impacto:</strong> Redução de SLA de 135 min para 10 segundos; economia direta de <strong>R$ 127.728/ano</strong> em custos de suporte; elevação do CSAT de 3,24 para &gt; 4,20.</li>
+</ul>
+<h3 id="módulo-c-motor-de-priorização-de-margem-desmobilização-de-estoque">Módulo C: Motor de Priorização de Margem &amp; Desmobilização de Estoque</h3>
+<ul>
+<li><strong>Função:</strong> Algoritmo analítico de inteligência de catálogo para ranquear SKUs em 4 quadrantes de Risco × Retorno.</li>
+<li><strong>Mecanismo:</strong>
+<ol type="1">
+<li><em>SKUs sem giro (&gt;180 dias):</em> Liquidação cirúrgica via canal outlet/kits com trava de margem contábil (evitando queimar caixa).</li>
+<li><em>SKUs campeões de margem:</em> Preservação de preço cheio e proibição de cupons predatórios.</li>
+<li><em>Trava de checkout:</em> Bloqueio algorítmico de pedidos com margem de contribuição negativa (estancando os 491 pedidos deficitários).</li>
+</ol></li>
+<li><strong>Impacto:</strong> Desmobilização de R$ 69,7 milhões de estoque parado em 90 dias e proteção de R$ 38,5k de prejuízo direto de frete.</li>
+</ul>
+<hr />
+<h2 id="business-case-retorno-do-investimento-roi">7. Business Case &amp; Retorno do Investimento (ROI)</h2>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 38%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Alavanca de Geração de Valor</th>
+<th style="text-align: center;">Impacto Financeiro Anualizado</th>
+<th style="text-align: left;">Natureza do Benefício</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Desmobilização de 20% do Excesso de Estoque</strong></td>
+<td style="text-align: center;"><strong>R$ 69.740.310,00</strong></td>
+<td style="text-align: left;"><strong>Injeção Imediata de Caixa / Liquidez</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Economia de Juros Financeiros de Estoque (CDI 11%)</strong></td>
+<td style="text-align: center;"><strong>R$ 7.671.434,00 / ano</strong></td>
+<td style="text-align: left;">Redução de Despesas Financeiras Líquidas</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Recuperação de Margem em Devoluções (Meta 30%)</strong></td>
+<td style="text-align: center;"><strong>R$ 456.956,00 / ano</strong></td>
+<td style="text-align: left;">Incremento Direto de Margem Bruta</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Automação de Rastreio com Agente IA (Meta 80%)</strong></td>
+<td style="text-align: center;"><strong>R$ 127.728,00 / ano</strong></td>
+<td style="text-align: left;">Redução de Custo Fixo Operacional</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Eliminação de Pedidos com Margem Negativa</strong></td>
+<td style="text-align: center;"><strong>R$ 38.508,00 / ano</strong></td>
+<td style="text-align: left;">Estancamento de Prejuízos Comerciais</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VALOR TOTAL ANUALIZADO</strong></td>
+<td style="text-align: center;"><strong>&gt; R$ 78,0 MILHÕES</strong></td>
+<td style="text-align: left;"><strong>Payback do Projeto &lt; 30 dias</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="roadmap-de-implementação-plano-30-60-90-dias">8. Roadmap de Implementação — Plano 30-60-90 Dias</h2>
+<pre class="mermaid"><code>gantt
+    title Cronograma de Implementação - Projeto Vértice (90 Dias)
+    dateFormat  YYYY-MM-DD
+    section Fase 1 (30 Dias)
+    Trava de margem negativa no checkout          :done, 2026-10-01, 15d
+    Agente IA de rastreio no WhatsApp              :active, 2026-10-05, 25d
+    Régua de comunicação proativa de entrega     :done, 2026-10-15, 15d
+    section Fase 2 (60 Dias)
+    Motor de priorização de margem / outlet       :2026-11-01, 30d
+    Guia virtual de medidas nas páginas de Moda   :2026-11-10, 20d
+    Repactuação de SLA com fornecedores defeituosos:2026-11-15, 15d
+    section Fase 3 (90 Dias)
+    Modelo preditivo de compras de suprimentos    :2026-12-01, 30d
+    Dashboard executivo automatizado (Memo Semanal):2026-12-10, 20d
+    Revisão final de metas e escala de IA         :2026-12-20, 10d</code></pre>
+<ul>
+<li><strong>Dias 1 a 30 (Estancamento de Perdas):</strong> Implantação da trava de checkout contra pedidos deficitários e piloto do Agente de IA para dúvidas de rastreamento no WhatsApp.</li>
+<li><strong>Dias 31 a 60 (Recuperação de Margem e Giro):</strong> Operação do Motor de Priorização de Margem para desovar os 82 SKUs parados e implantação do provador inteligente na categoria Moda.</li>
+<li><strong>Dias 61 a 90 (Governança &amp; Escala Analítica):</strong> Conexão do modelo preditivo de compras ao ERP para impedir superestocagem futura e geração automática do memo semanal da diretoria.</li>
+</ul>
+<hr />
+<h2 id="riscos-governança-mitigação">9. Riscos, Governança &amp; Mitigação</h2>
+<ol type="1">
+<li><strong>Risco de Alucinação de IA no Atendimento:</strong> Mitigado via arquitetura RAG (Retrieval-Augmented Generation) com guardrails rígidos: o agente apenas lê e repassa o status retornado pela API oficial da transportadora. Caso o pedido não seja localizado, faz transbordo imediato para operador humano N2.</li>
+<li><strong>Risco de Canibalização de Margem na Liquidação:</strong> O Motor de Margem possui trava rígida: nenhum SKU pode receber desconto que resulte em preço abaixo do custo unitário cadastrado em <code>estoque.csv</code>.</li>
+<li><strong>Privacidade e LGPD:</strong> Mascaramento de dados sensíveis (CPF, telefone e e-mail) antes do envio para modelos de linguagem.</li>
+</ol>
+<hr />
+<h2 id="conclusão-próximos-passos-para-o-pitch-final-2309">10. Conclusão &amp; Próximos Passos para o Pitch Final (23/09)</h2>
+<p>O diagnóstico do Grupo 18 demonstra que a Vértice Retail tem um modelo comercial validado e produtos desejados pelo mercado, mas sofre de ineficiências operacionais internas perfeitamente solucionáveis.</p>
+<p>A proposta apresentada combina <strong>estancamento imediato de vazamento de margem em 30 dias</strong> com <strong>destravamento de R$ 69,7 milhões de liquidez em 90 dias</strong>, colocando a companhia no caminho de um EBITDA robusto e sustentável.</p>
+</body>
+</html>
