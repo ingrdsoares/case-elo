@@ -1,0 +1,62 @@
+================================================================================
+ROTEIRO INTEGRADO DE ENSAIO — PITCH FINAL PROJETO VÉRTICE (GRUPO 18)
+Apresentadores: Pedro Ribeiro & Ingrid Soares
+Mentoria Técnica: Coutinho, EloGroup | Data da Banca: 23 de Setembro de 2026
+Duração Total Estimada: 7 a 8 minutos
+================================================================================
+
+SLIDE 1 | CAPA & ABERTURA
+- Orador: Pedro Ribeiro (com apoio da Ingrid)
+- Tempo: 0:00 a 0:45 (45s)
+- Ponto-chave: Apresentação da squad e introdução à pergunta executiva da diretoria.
+
+SLIDE 2 | O PARADOXO DO CRESCIMENTO
+- Orador: Pedro Ribeiro
+- Tempo: 0:45 a 1:30 (45s)
+- Ponto-chave: Vendas atingiram R$ 20,5M brutos, mas o caixa secou e a margem encolheu.
+
+SLIDE 3 | ÁRVORE DE PROBLEMAS (ISSUE TREE)
+- Orador: Pedro Ribeiro
+- Tempo: 1:30 a 2:15 (45s)
+- Ponto-chave: Decomposição em 4 pilares (Estoque, Devoluções, SAC e Precificação).
+
+SLIDE 4 | OS TRÊS FATOS FORENSES INQUESTIONÁVEIS DOS DADOS
+- Orador: Pedro Ribeiro
+- Tempo: 2:15 a 3:15 (60s)
+- Ponto-chave: R$ 348,7M de estoque parado (42 anos de giro); 14,87% de devoluções (70% operacionais); 30% SAC em "onde está meu pedido?".
+
+SLIDE 5 | OPORTUNIDADES PRIORIZADAS & TRANSIÇÃO
+- Orador: Pedro Ribeiro -> Ingrid Soares
+- Tempo: 3:15 a 3:45 (30s)
+- Ponto-chave: Matriz Impacto x Esforço e passagem de bastão ("Agora a Ingrid vai demonstrar a solução de IA").
+
+SLIDE 6 | A SOLUÇÃO DUAL COM INTELIGÊNCIA ARTIFICIAL
+- Oradora: Ingrid Soares
+- Tempo: 3:45 a 4:30 (45s)
+- Ponto-chave: Módulo B (Agente de SAC com NLP/LLM) + Módulo C (Motor de Margem & Catálogo).
+
+SLIDE 7 | DEMONSTRAÇÃO DO PROTÓTIPO EM FUNCIONAMENTO
+- Oradora: Ingrid Soares
+- Tempo: 4:30 a 5:30 (60s)
+- Ponto-chave: Mostrar casos reais do dataset: SAC respondendo em 3s, emissão reversa e desova dos 82 SKUs parados.
+
+SLIDE 8 | BUSINESS CASE EXECUTIVO & ROI
+- Oradora: Ingrid Soares
+- Tempo: 5:30 a 6:15 (45s)
+- Ponto-chave: R$ 78M destravados (R$ 69,7M liquidez + R$ 8,3M margem/ano). Payback < 30 dias.
+
+SLIDE 9 | ROADMAP DE IMPLEMENTAÇÃO 30-60-90 DIAS
+- Oradora: Ingrid Soares
+- Tempo: 6:15 a 6:50 (35s)
+- Ponto-chave: 30 dias (Quick wins), 60 dias (Estoque e devoluções), 90 dias (Governança preditiva).
+
+SLIDE 10 | RISCOS, GOVERNANÇA & MITIGAÇÃO
+- Oradora: Ingrid Soares
+- Tempo: 6:50 a 7:25 (35s)
+- Ponto-chave: Blindagem RAG contra alucinação, trava de preço de custo e LGPD.
+
+SLIDE 11 | RECOMENDAÇÃO FINAL & PRÓXIMOS PASSOS
+- Oradores: Ingrid Soares & Pedro Ribeiro juntos
+- Tempo: 7:25 a 8:00 (35s)
+- Ponto-chave: Chamada firme à ação (aprovação do piloto da Fase 1) e agradecimento à banca.
+================================================================================

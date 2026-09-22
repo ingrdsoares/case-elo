@@ -1,0 +1,123 @@
+================================================================================
+ROTEIRO DE FALAS — INGRID SOARES (GRUPO 18)
+APRESENTAÇÃO DO PITCH FINAL — PROJETO VÉRTICE RETAIL
+Foco: Funcionamento de Tudo, Arquitetura de IA, Protótipo em Ação, Business Case e Roadmap
+Tempo Estimado: 4 a 5 minutos (Slides 6 ao 11)
+================================================================================
+
+[SLIDE 6 — A SOLUÇÃO COM INTELIGÊNCIA ARTIFICIAL: ARQUITETURA DUAL]
+(Ingrid assume a palavra com energia e entusiasmo executivo)
+
+"Obrigada, Pedro! Olá a todos.
+Como o Pedro acabou de demonstrar, o problema da Vértice não é falta de clientes;
+é atrito operacional e asfixia de capital de giro. Por isso, nossa premissa técnica foi:
+'A tecnologia deve servir ao problema — e não o contrário'.
+
+Em vez de criar uma ferramenta genérica, nós desenhamos uma Solução Dual com Inteligência Artificial,
+composta por dois módulos perfeitamente integrados ao ERP e aos canais da empresa:
+
+O Módulo B é o nosso Agente Inteligente de Atendimento ao Cliente para WhatsApp e Chatbot.
+Ele utiliza Processamento de Linguagem Natural e LLM com Function Calling. O agente não apenas
+conversa: ele classifica a intenção do cliente, mede o sentimento e o risco de churn, e se conecta
+diretamente às APIs das transportadoras para resolver chamados em segundos sem intervenção humana.
+
+O Módulo C é o Motor de Priorização de Margem e Estoque. É um algoritmo analítico que monitora
+os 5.000 SKUs da empresa e classifica o catálogo em quatro quadrantes de Risco e Retorno,
+orquestrando a queima cirúrgica do estoque parado e blindando o checkout contra pedidos deficitários."
+
+
+--------------------------------------------------------------------------------
+[SLIDE 7 — DEMONSTRAÇÃO DO PROTÓTIPO EM FUNCIONAMENTO]
+(Momento alto da apresentação: Ingrid demonstra como a IA funciona na prática)
+
+"E nós não ficamos apenas na teoria: nós construímos o protótipo funcional em Python e testamos
+com os dados reais da Vértice. Vou mostrar agora como tudo isso funciona na prática:
+
+Primeiro caso: O cliente manda no WhatsApp: 'Cadê meu pedido que ainda não chegou? Tá demorando muito!'.
+No processo manual de hoje, esse cliente esperava 135 minutos na fila.
+O nosso Agente de IA lê a mensagem, classifica a intenção como 'Rastreamento', detecta sentimento negativo,
+faz a chamada automática à API da transportadora com o número do pedido e responde em menos de TRÊS SEGUNDOS:
+'Olá! Localizamos seu pedido. Ele está com a transportadora e a previsão de entrega é de 14 dias úteis,
+código de rastreio BR036085X'. O problema do cliente é resolvido instantaneamente, com zero custo de operador humano.
+
+Segundo caso: Um cliente irritado relata: 'Minha blusa veio rasgada na costura. Que absurdo!'.
+O agente identifica risco ALTO de churn e defeito no produto. Ele imediatamente dispara o fluxo de garantia,
+solicita a foto da peça e já emite na hora o código de postagem reversa sem custo nos Correios.
+
+E na ponta do Estoque e Margem: o Motor de Margem varreu os 5.000 SKUs e isolou imediatamente os 82 SKUs
+que estavam há mais de um ano com venda zero imobilizando R$ 6,68 milhões. O algoritmo gerou automaticamente
+a regra de liquidação para esses itens em canais outlet, com uma trava inegociável: o preço com desconto
+NUNCA fica abaixo do custo unitário do produto.
+Além disso, simulamos carrinhos no checkout com frete subsidiado e cupons agressivos: o algoritmo detecta
+na hora se a margem de contribuição ficaria negativa e reajusta o desconto automaticamente, estancando de vez
+o prejuízo daqueles 491 pedidos do histórico."
+
+
+--------------------------------------------------------------------------------
+[SLIDE 8 — BUSINESS CASE EXECUTIVO & RETORNO DO INVESTIMENTO (ROI)]
+
+"Agora vamos traduzir essa tecnologia em números reais para a mesa da diretoria.
+Construímos uma modelagem financeira determinística e conservadora:
+
+1ª Alavanca: A desmobilização de apenas 20% do excesso de estoque através do Motor de Margem nos
+próximos 90 dias injeta R$ 69,74 MILHÕES de liquidez imediata no caixa da Vértice.
+2ª Alavanca: Reduzir esse estoque alivia o custo de capital a uma taxa de 11% ao ano, gerando
+uma economia de R$ 7,67 milhões anuais em despesas financeiras com juros.
+3ª Alavanca: A automação de 80% das dúvidas de rastreio pelo agente de IA economiza R$ 127 mil ao ano
+em folha de atendimento humano, além de reduzir drasticamente o tempo de resposta.
+4ª Alavanca: A redução de 30% das devoluções operacionais com guias virtuais de medidas e SLA
+de fornecedores recupera R$ 456 mil anuais em margem que antes era queimada no lixo.
+
+Somando margem recuperada, economia e injeção de liquidez, estamos falando de mais de R$ 78 MILHÕES
+em valor destravado. Considerando um investimento estimado de R$ 250 mil a R$ 350 mil entre desenvolvimento
+e infraestrutura de IA, o Payback do projeto é INFERIOR A 30 DIAS!"
+
+
+--------------------------------------------------------------------------------
+[SLIDE 9 — ROADMAP DE IMPLEMENTAÇÃO: PLANO 30-60-90 DIAS]
+
+"E como nós vamos colocar tudo isso de pé? Com um plano de 90 dias estruturado em três fases:
+
+Fase 1 (Primeiros 30 Dias) — Estancamento de Sangrias:
+Implementamos a trava de checkout contra pedidos deficitários e colocamos no ar o piloto do Agente
+de IA no WhatsApp para 100% das dúvidas de rastreamento. Já reduzimos o tempo de resposta pela metade.
+
+Fase 2 (31 a 60 Dias) — Otimização e Recuperação de Margem:
+Ativamos o Motor de Margem para a queima dos 82 SKUs parados no canal outlet e lançamos o provador
+virtual inteligente nas páginas de produto de Moda, iniciando a queda nas devoluções de tamanho.
+
+Fase 3 (61 a 90 Dias) — Governança Preditiva e Escala:
+Conectamos o modelo preditivo de compras de suprimentos ao ERP, garantindo que a Vértice nunca mais
+compre 42 anos de estoque no escuro, e automatizamos o memo executivo semanal para os diretores."
+
+
+--------------------------------------------------------------------------------
+[SLIDE 10 — RISCOS, GOVERNANÇA & MITIGAÇÃO]
+
+"Sabemos que implementar Inteligência Artificial exige responsabilidade e governança.
+Por isso, construímos quatro barreiras rígidas de proteção:
+
+1. Risco de Alucinação: O agente de IA opera com arquitetura RAG e guardrails rígidos. Ele é proibido
+de inventar status de encomenda; se a API logística não responder, ele faz transbordo com contexto
+para um atendente humano N2.
+2. Risco de Prejuízo em Descontos: O motor de precificação tem uma trava matemática no código: nenhum
+produto é vendido por valor inferior ao seu custo contábil.
+3. Privacidade e LGPD: Mascaramos todos os dados sensíveis dos clientes antes de qualquer envio a modelos de linguagem.
+4. Gestão de Mudança: Não estamos demitindo o time de atendimento; estamos tirando os atendentes do trabalho
+braçal e repetitivo de consultar rastreio para treiná-los como consultores de pós-venda e fidelização."
+
+
+--------------------------------------------------------------------------------
+[SLIDE 11 — RECOMENDAÇÃO FINAL & PRÓXIMOS PASSOS]
+(Momento de fechamento com chamado firme à ação. Pedro e Ingrid juntos)
+
+"Para concluir: a Vértice Retail tem marca forte, demanda crescente e produtos desejados pelo mercado.
+O que estava sufocando a empresa era a falta de inteligência de compras e o atrito operacional do pós-venda.
+
+Com a nossa solução, nós transformamos esse gargalo em R$ 78 milhões de valor capturado e colocamos a empresa
+em um novo patamar de maturidade de gestão com dados e inteligência artificial.
+
+Nossa recomendação à Diretoria Executiva é a aprovação imediata da Fase 1, para iniciarmos a integração
+das APIs e o piloto do Agente de Atendimento já nesta semana.
+
+Estamos 100% prontos para executar. Muito obrigada e estamos abertos às perguntas da banca!"

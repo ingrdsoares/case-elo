@@ -1,0 +1,85 @@
+================================================================================
+ROTEIRO DE FALAS — PEDRO RIBEIRO (GRUPO 18)
+APRESENTAÇÃO DO PITCH FINAL — PROJETO VÉRTICE RETAIL
+Foco: Dados, Diagnóstico Forense, Árvore de Problemas e Oportunidades
+Tempo Estimado: 3 a 4 minutos (Slides 1 ao 5)
+================================================================================
+
+[SLIDE 1 — CAPA: ABERTURA & CONTEXTO]
+(Pedro começa a apresentação com postura executiva e segura)
+
+"Bom dia/boa tarde a todos os membros da banca e mentores da EloGroup.
+Meu nome é Pedro Ribeiro e, ao lado da Ingrid Soares, nós formamos o Grupo 18.
+Nos últimos dias, atuamos como consultores estratégicos no Projeto Vértice, conduzindo
+uma investigação forense completa para responder ao desafio central colocado pela Diretoria:
+'Como podemos usar dados e inteligência artificial para recuperar rentabilidade,
+eficiência operacional e qualidade da tomada de decisão nos próximos 90 dias?'"
+
+
+--------------------------------------------------------------------------------
+[SLIDE 2 — DIAGNÓSTICO DO NEGÓCIO: O PARADOXO DO CRESCIMENTO]
+
+"Começando pelo diagnóstico: à primeira vista, a Vértice Retail parece um estrondoso
+caso de sucesso. A empresa cresceu rápido, atingiu mais de R$ 20,5 milhões em faturamento
+bruto anual e processou quase 28 mil pedidos, impulsionada por marketing digital e marketplace.
+
+Porém, quando olhamos para a saúde financeira real, nos deparamos com o clássico
+'Paradoxo do Crescimento': a receita cresceu, mas o lucro operacional encolheu e o caixa
+simplesmente desapareceu. A diretoria percebia a perda de margem, mas tomava decisões
+no escuro e no feeling, porque os dados estavam completamente fragmentados entre setores.
+Nossa primeira missão foi auditar os números para entender onde o valor estava vazando."
+
+
+--------------------------------------------------------------------------------
+[SLIDE 3 — ÁRVORE DE PROBLEMAS: ISSUE TREE]
+
+"Para estruturar o problema sem preconceitos, decompusemos a perda de rentabilidade
+em quatro pilares lógicos através de uma Issue Tree:
+
+1º O Capital Imobilizado: a relação entre o que a empresa compra e o que ela realmente vende.
+2º A Margem Líquida Pós-Venda: o impacto das devoluções e frete reverso no faturamento.
+3º A Produtividade do Atendimento: quanto custa o SAC e o que os clientes demandam.
+4º As Regras de Precificação: se existem pedidos sendo vendidos com prejuízo direto.
+
+Ao cruzar as cinco bases de dados do Data Room, nós testamos hipóteses concorrentes
+e conseguimos separar o que era mero sintoma do que eram as causas-raiz estruturais."
+
+
+--------------------------------------------------------------------------------
+[SLIDE 4 — OS TRÊS GRANDES FATOS INQUESTIONÁVEIS DOS DADOS]
+(Pedro dá ênfase máxima aos números e à seriedade dos achados)
+
+"E o que os dados nos revelaram de forma inquestionável? Três fatos estarrecedores:
+
+Primeiro: Um descompasso crítico de estoque. A Vértice faturou R$ 18,9M líquidos com um
+custo de mercadoria vendida de R$ 8,28M ao ano. Mas ela tem no estoque físico R$ 348,70 milhões
+em mercadorias a preço de custo! Isso significa mais de 1,67 milhão de peças paradas — o equivalente
+a 42 ANOS de cobertura de estoque no ritmo atual de vendas! A categoria Moda sozinha concentra
+864 mil peças, e identificamos 82 SKUs com rigorosamente ZERO vendas há 13 meses, imobilizando
+R$ 6,68 milhões de caixa. Carregar esse estoque ocioso custa R$ 38,3 milhões anuais só em juros de capital.
+
+Segundo: Uma sangria invisível nas devoluções. A taxa de devolução atinge 14,87% dos pedidos.
+São 4.127 pedidos devolvidos que destruíram R$ 1,52 milhão em margem de contribuição direta.
+E refutamos a tese de que isso é 'arrependimento de compra': 70% das devoluções decorrem de falhas
+operacionais evitáveis — peças com defeito (25%), erros de modelagem e tamanho (25%) e atraso de entrega (20%).
+
+Terceiro: Um atendimento ao cliente arcaico e congestionado. Foram 35,8 mil chamados custando
+R$ 532 mil à companhia. E pasmem: 30% de todos os chamados — quase 11 mil clientes — ligam ou mandam
+mensagem apenas para perguntar 'Onde está meu pedido?'. E o pior: esperam em média 135 minutos para um
+operador humano consultar manualmente o código na transportadora!"
+
+
+--------------------------------------------------------------------------------
+[SLIDE 5 — OPORTUNIDADES PRIORIZADAS & TRANSIÇÃO]
+
+"Diante desse cenário, nós mapeamos as oportunidades em uma matriz de Impacto versus Esforço:
+Separamos os Quick Wins imediatos — como travar no checkout pedidos que dão margem negativa
+e automatizar o rastreio no SAC — das iniciativas estruturais de desmobilização do estoque parado.
+
+Nós temos a capacidade de liberar mais de R$ 70 milhões em liquidez e recuperar mais de
+R$ 8 milhões por ano em margem e eficiência operacional.
+
+E agora, eu passo a palavra para a Ingrid, que vai mostrar para vocês como desenhamos e
+construímos a solução prática de Inteligência Artificial para capturar esse valor nos próximos 90 dias."
+
+(Pedro faz o handoff para a Ingrid e assume o papel de apoio)
