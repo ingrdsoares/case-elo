@@ -1,0 +1,120 @@
+# PROMPT 6 — BUSINESS CASE, ROADMAP 30-60-90 E APRESENTAÇÃO EXECUTIVA | PROJETO VÉRTICE
+
+## 1. PAPEL E CONTEXTO
+
+Você é o *Senior Strategy Lead & Engagement Manager* do Projeto Vértice.
+
+Você possui em mãos:
+1. **O Diagnóstico Forense dos Dados (Prompts 1 a 4):**
+   * *Estoque:* R$ 348,70M imobilizados a custo (1,67 milhão de peças para 97k vendas/ano; 42 anos de cobertura), com 864k peças em Moda e 82 SKUs sem giro (R$ 6,68M parados).
+   * *Devoluções:* 14,87% da base (4.127 pedidos), com R$ 1,52M de margem sacrificada. 69,6% são falhas operacionais evitáveis (defeito, tamanho e atraso).
+   * *Atendimento:* 35.841 chamados (R$ 532k de custo operacional), com 30% em *"Onde está meu pedido?"* (R$ 159,6k gastos com operadores humanos e 135 min de SLA).
+   * *Vazamento de Margem:* 491 pedidos com margem negativa (-17,2%) por cupons combinados com frete alto.
+2. **A Solução Técnica Desenvolvida (Prompt 5):**
+   * *Módulo B:* Classificador Inteligente e Agente Resolutivo de Atendimento (WhatsApp / Chatbot).
+   * *Módulo C:* Motor de Priorização de Margem, Liquidação Cirúrgica de Estoque Parado e Trava de Checkout.
+
+Agora, sua missão é traduzir todo o diagnóstico e a tecnologia em uma **proposta de valor executiva irrecusável** para a Diretoria da Vértice Retail (CEO, CFO, CMO e COO), preparando a squad para o **Pitch Final da banca avaliadora no dia 23/09/2026**.
+
+---
+
+## 2. OBJETIVO DO PROMPT 6
+
+Construir os três entregáveis estratégicos finais do case:
+1. **Business Case Detalhado & Retorno Financeiro (ROI):** Dimensionar o valor financeiro e operacional exato capturado pela solução nos próximos 90 dias e em base anualizada.
+2. **Roadmap de Implementação 30-60-90 Dias:** Estruturar o cronograma tático de implantação com entregáveis claros, responsáveis e marcos semanais.
+3. **Storyline Completo da Apresentação Final (11 Slides):** Roteiro persuasivo, executivo e orientado à tomada de decisão para a banca avaliadora, cobrindo exatamente os 11 slides requeridos no regulamento do BootCamp.
+
+---
+
+## 3. BUSINESS CASE EXECUTIVO & MODELAGEM FINANCEIRA
+
+Construa a modelagem determinística do retorno financeiro da Vértice Retail com premissas claras:
+
+### 3.1 Alavancas de Captura Financeira
+Apresente a tabela detalhada com os seguintes blocos:
+1. **Desmobilização de Estoque Parado (Capital de Giro):**
+   * *Premissa:* Liquidação de 20% do estoque excedente (Moda e SKUs parados) em canais outlet/kits com trava de preço de custo em 90 dias.
+   * *Impacto:* R$ 69.740.310,00 de injeção direta de liquidez no caixa.
+2. **Economia em Custo de Carregamento de Estoque (Juros):**
+   * *Premissa:* Redução da queima de capital de giro a uma taxa CDI de 11,0% a.a. sobre o estoque desmobilizado.
+   * *Impacto:* R$ 7.671.434,00 / ano em economia de despesas financeiras.
+3. **Recuperação de Margem em Devoluções Operacionais:**
+   * *Premissa:* Redução conservadora de 30% nas devoluções por defeito e erro de tamanho com provador virtual e homologação de fornecedores.
+   * *Impacto:* R$ 456.956,00 / ano em margem retida + R$ 37.000,00 em economia de frete reverso.
+4. **Redução de Custos de Atendimento (Customer Service):**
+   * *Premissa:* Automação de 80% dos 10.765 chamados de rastreio de pedidos pelo agente de IA.
+   * *Impacto:* R$ 127.728,00 / ano em redução de custo operacional direto.
+5. **Estancamento de Pedidos com Margem Negativa:**
+   * *Premissa:* Trava algorítmica no checkout eliminando pedidos com margem deficitária.
+   * *Impacto:* R$ 38.508,00 / ano de prejuízo estancado.
+
+### 3.2 Indicadores Consolidados do Business Case
+* **Impacto Total Consolidado:** R$ 78.034.936,00 (R$ 69,7M em caixa livre e R$ 8,3M em margem/ano).
+* **Investimento Estimado no Projeto (CapEx + OpEx 1 ano):** Desenvolvimento, infraestrutura de APIs/LLMs e consultoria (~R$ 250.000 a R$ 350.000).
+* **Payback Estimado:** Inferior a 30 dias (capturado logo nos primeiros quick wins de atendimento e travas de checkout).
+* **Análise de Sensibilidade:** Construa uma tabela comparando os cenários *Conservador*, *Base* e *Otimista*.
+
+---
+
+## 4. ROADMAP DE IMPLEMENTAÇÃO 30-60-90 DIAS
+
+Estruture o plano tático de ação dividindo o horizonte em 3 fases complementares:
+
+### Fase 1: Primeiros 30 Dias — "Estancamento de Perdas & Quick Wins"
+* Trava de margem negativa no checkout do e-commerce (bloqueio de cupons combinados com frete alto).
+* Implantação do Agente de IA no WhatsApp integrado à API de rastreamento para absorver dúvidas de *"Onde está meu pedido?"*.
+* Disparo de mensagens proativas de rastreamento via WhatsApp no momento do despacho (reduzindo abertura de tickets em 40%).
+* *Entregável-chave:* Redução de 50% no tempo de resposta do SAC e eliminação imediata de pedidos deficitários.
+
+### Fase 2: 31 a 60 Dias — "Otimização de Catálogo & Recuperação de Margem"
+* Execução do Motor de Priorização de Margem para direcionar a liquidação dos 82 SKUs sem giro via aba secreta de Outlet e combos.
+* Lançamento do Guia Inteligente de Medidas nas páginas de produto de Moda para reduzir devoluções de tamanho.
+* Repactuação de contratos e implantação de penalidades para os 3 fornecedores com maior incidência de produtos com defeito.
+* *Entregável-chave:* Início da liberação de capital de giro e queda de 20% na taxa de devolução.
+
+### Fase 3: 61 a 90 Dias — "Governança Preditiva & Escala Analítica"
+* Integração do modelo preditivo de compras de suprimentos ao ERP/WMS (baseado em sell-through histórico, evitando superestocagem).
+* Dashboard Executivo Automatizado (Memo Semanal da Diretoria) gerando relatórios de margem, giro e CSAT sem compilação manual.
+* Expansão do Agente de Atendimento para suporte em trocas automáticas e vendas assistidas.
+* *Entregável-chave:* Governança institucionalizada e aprovação do plano de expansão para o próximo ano fiscal.
+
+Inclua um cronograma visual em **Mermaid Gantt Chart** e uma tabela de governança detalhando *Iniciativa*, *Responsável (RACI)*, *Dependências Técnicas* e *KPI de Sucesso*.
+
+---
+
+## 5. ROTEIRO PERSUASIVO DA APRESENTAÇÃO FINAL (11 SLIDES DA BANCA — 23/09)
+
+Estruture o conteúdo completo para cada um dos 11 slides requeridos pelas diretrizes oficiais do BootCamp (`Case Vértice 1.html`):
+
+Para **CADA UM** dos 11 slides, detalhe obrigatoriamente:
+1. **Título e Subtítulo do Slide**
+2. **Mensagem Central (One-liner que a banca deve memorizar)**
+3. **Evidência / Dados a Exibir (Tabelas, gráficos ou números de impacto)**
+4. **Layout Visual Sugerido (Como organizar a tela: cards, gráficos, colunas)**
+5. **Script de Fala Sugerido para o Apresentador (Discurso seguro, executivo e persuasivo de ~45 segundos por slide)**
+
+### Estrutura dos 11 Slides:
+* **Slide 1:** Contexto do Projeto e Pergunta Central da Diretoria.
+* **Slide 2:** Diagnóstico do Negócio — O Paradoxo do Crescimento (R$ 20,5M de vendas vs. asfixia de caixa).
+* **Slide 3:** Árvore de Problemas (Issue Tree) — Decompondo a perda de rentabilidade.
+* **Slide 4:** Os Principais Achados & Fatos Forenses (R$ 348M de estoque, 14,87% devoluções, 30% SAC rastreio).
+* **Slide 5:** Oportunidades Priorizadas — Matriz de Impacto × Esforço.
+* **Slide 6:** A Solução com Inteligência Artificial — Arquitetura da Solução Dual (Módulo B + Módulo C).
+* **Slide 7:** Demonstração do Protótipo de IA — Mostrando a ferramenta em funcionamento.
+* **Slide 8:** Business Case & Retorno do Investimento — R$ 78M em valor capturado e payback imediato.
+* **Slide 9:** Roadmap de Implementação 30-60-90 Dias — O caminho seguro para o resultado.
+* **Slide 10:** Riscos, Governança e Mitigação — Blindagem de IA, LGPD e adoção pelas equipes.
+* **Slide 11:** Recomendação Final & Próximos Passos — A decisão executiva que a Diretoria deve tomar hoje.
+
+---
+
+## 6. FORMATO OBRIGATÓRIO DA RESPOSTA
+
+Entregue o resultado nesta sequência:
+1. **Executive Summary do Business Case**
+2. **Modelagem Financeira e Análise de Sensibilidade**
+3. **Roadmap 30-60-90 com Gráfico Gantt e Matriz RACI**
+4. **Matriz de Riscos de Implementação e Gestão de Mudança**
+5. **Roteiro Completo Slide por Slide da Apresentação Final (Slides 1 a 11 com script de fala)**
+6. **Checklist Final para a Banca do dia 23/09**
