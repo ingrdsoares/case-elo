@@ -12,7 +12,7 @@ Repositório oficial do projeto final de consultoria estratégica com Inteligên
 | **Ingrid Soares** | Strategy & AI Consultant | [@ingrdsoares](https://github.com/ingrdsoares) |
 | **Pedro Ribeiro** | Strategy & Analytics Consultant | [@pedrorpr](https://github.com/pedrorpr) |
 
-* **Mentoria Técnica:** EloGroup
+* **Mentoria Técnica:** Coutinho, EloGroup
 * **Data da Banca / Pitch Final:** 23 de Setembro de 2026
 
 ---

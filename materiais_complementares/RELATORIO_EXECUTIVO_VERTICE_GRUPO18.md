@@ -2,7 +2,7 @@
 ## BootCamp Nova Geração — AI Consulting Lab | EloGroup (2026)
 
 **Equipe / Grupo 18:** Ingrid Soares • Pedro Ribeiro ([@pedrorpr](https://github.com/pedrorpr))  
-**Mentoria Técnica:** EloGroup  
+**Mentoria Técnica:** Coutinho, EloGroup  
 **Data da Entrega:** 21 de Setembro de 2026  
 **Data da Banca / Pitch Final:** 23 de Setembro de 2026  
 **Entregável Oficial:** Diagnóstico Estratégico, Análises Quantitativas, Solução com IA e Business Case
