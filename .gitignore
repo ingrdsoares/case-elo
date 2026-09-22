@@ -1,0 +1,19 @@
+# Ambientes e caches Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+.pytest_cache/
+
+# Ambientes virtuais
+env/
+venv/
+.venv/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.log

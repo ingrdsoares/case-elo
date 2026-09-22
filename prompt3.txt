@@ -1,0 +1,223 @@
+Prompt 3 — Teste de Hipóteses e Validação da Causa Raiz | Projeto Vértice
+
+Você agora é responsável pela etapa de validação causal do diagnóstico da Vértice Retail.
+
+Você recebeu:
+
+1. O resultado do Prompt 1 — Data Audit e exploração inicial;
+2. O resultado do Prompt 2 — investigação aprofundada, issue tree e hipóteses.
+
+Seu objetivo NÃO é gerar novas hipóteses indiscriminadamente.
+
+Seu objetivo é testar rigorosamente as principais hipóteses e determinar quais explicações possuem evidência suficiente para serem consideradas causas prováveis do problema de negócio.
+
+==================================================
+
+1. REGRA CENTRAL
+   ==================================================
+
+Para cada hipótese:
+
+TENTE REFUTÁ-LA antes de tentar confirmá-la.
+
+Não confunda:
+
+correlação ≠ causalidade
+sintoma ≠ causa
+causa intermediária ≠ causa raiz
+anomalia ≠ problema estrutural.
+
+Não invente dados.
+
+Não preencha lacunas com suposições.
+
+==================================================
+2. TESTE CADA HIPÓTESE
+======================
+
+Para cada hipótese, responda:
+
+A. O que exatamente estamos tentando explicar?
+
+B. Qual é o mecanismo causal proposto?
+
+C. Qual evidência esperávamos encontrar se a hipótese fosse verdadeira?
+
+D. Essa evidência existe?
+
+E. Qual é a magnitude?
+
+F. Em que período acontece?
+
+G. Em quais produtos/canais/clientes/processos acontece?
+
+H. Existe relação temporal?
+
+I. Existem grupos onde o fenômeno não acontece?
+
+J. Existe outra variável que poderia explicar o fenômeno?
+
+K. Qual evidência contradiz a hipótese?
+
+L. Qual informação ainda falta?
+
+==================================================
+3. TESTE DE CAUSALIDADE
+=======================
+
+Sempre que possível, investigue:
+
+* precedência temporal;
+* intensidade da relação;
+* consistência entre segmentos;
+* concentração do efeito;
+* diferenças entre grupos;
+* mudanças antes/depois;
+* relação entre variáveis intermediárias.
+
+Quando os dados não permitirem inferir causalidade, declare explicitamente:
+
+“Os dados demonstram associação, mas não permitem estabelecer causalidade.”
+
+==================================================
+4. TESTE DE ALTERNATIVAS
+========================
+
+Para cada hipótese principal, construa pelo menos 2 explicações alternativas.
+
+Exemplo:
+
+Hipótese:
+“Estoque excessivo está pressionando a margem.”
+
+Alternativas:
+
+* estoque elevado é consequência, e não causa, da queda nas vendas;
+* o valor do estoque está contabilizado em uma unidade diferente;
+* o problema de margem é causado principalmente por descontos/mix;
+* o estoque elevado está concentrado em produtos que continuam rentáveis.
+
+Teste essas alternativas nos dados.
+
+==================================================
+5. CASO DO ESTOQUE
+==================
+
+Investigue profundamente a hipótese de estoque.
+
+Se existirem dados suficientes, determine:
+
+* estoque total;
+* estoque por SKU;
+* giro;
+* dias de estoque;
+* valor de estoque parado;
+* margem por SKU;
+* receita por SKU;
+* concentração;
+* descontos;
+* vendas históricas;
+* produtos sem movimentação;
+* relação entre estoque e margem.
+
+Responda:
+
+> “Existe evidência de que o estoque é uma causa da deterioração da rentabilidade ou ele é apenas um sintoma/consequência?”
+
+Essa distinção é obrigatória.
+
+==================================================
+6. 5 WHYS
+=========
+
+Para as 2–3 hipóteses mais relevantes, execute 5 Whys.
+
+Mas NÃO invente respostas.
+
+Se uma resposta não puder ser demonstrada pelos dados, escreva:
+
+“Evidência insuficiente — requer validação.”
+
+==================================================
+7. TRIANGULAÇÃO
+===============
+
+Uma hipótese ganha força quando é suportada por múltiplas bases independentes.
+
+Para cada hipótese, identifique:
+
+* Base 1;
+* Base 2;
+* Base 3;
+* relação observada;
+* consistência entre bases.
+
+Quanto maior a triangulação, maior a confiança.
+
+==================================================
+8. DIAGNÓSTICO FINAL
+====================
+
+Ao final, NÃO escolha simplesmente “a hipótese X”.
+
+Construa:
+
+Problema
+↓
+Sintoma
+↓
+Mecanismo
+↓
+Evidências
+↓
+Causa provável
+↓
+Evidências ainda faltantes
+
+Para cada hipótese, classifique:
+
+* Evidência forte;
+* Evidência moderada;
+* Evidência fraca;
+* Refutada;
+* Inconclusiva.
+
+Explique o motivo.
+
+==================================================
+9. CAUSA RAIZ
+=============
+
+Somente considere uma hipótese como causa raiz provável se:
+
+1. explicar uma parcela relevante do problema;
+2. possuir evidência consistente;
+3. houver mecanismo econômico/operacional plausível;
+4. sobreviver às principais hipóteses alternativas;
+5. houver evidência em mais de uma dimensão quando possível;
+6. não depender de uma inconsistência evidente dos dados.
+
+Se nenhuma hipótese atender aos critérios, NÃO force uma conclusão.
+
+Declare:
+
+“Não há evidência suficiente para determinar uma causa raiz única.”
+
+==================================================
+OUTPUT
+
+1. Hipóteses testadas
+2. Testes realizados
+3. Evidências a favor
+4. Evidências contra
+5. Explicações alternativas
+6. Resultado dos 5 Whys
+7. Triangulação entre bases
+8. Hipóteses refutadas
+9. Hipóteses inconclusivas
+10. Causa(s) raiz provável(is), se houver evidência suficiente
+11. Evidências que sustentam a conclusão
+12. Evidências que ainda precisam ser obtidas
+13. Diagnóstico executivo em 3–5 frases
+
+Não desenhe a solução ainda.

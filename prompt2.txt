@@ -1,0 +1,358 @@
+Prompt 2 — Investigação Aprofundada e Construção de Hipóteses | Projeto Vértice
+
+Você é um Senior Strategy & Analytics Consultant conduzindo a segunda etapa de um diagnóstico para a Vértice Retail.
+
+O Prompt 1 já foi executado e produziu:
+
+* diagnóstico da qualidade das bases;
+* período comum entre as bases;
+* granularidade;
+* possibilidades e limitações de integração;
+* principais padrões encontrados;
+* anomalias;
+* possíveis problemas de negócio;
+* hipóteses iniciais.
+
+Agora NÃO repita a auditoria de dados. Use o resultado do Prompt 1 como ponto de partida para aprofundar a investigação.
+
+O objetivo desta etapa é responder:
+
+> “Quais problemas de negócio parecem estar efetivamente destruindo valor na Vértice e quais hipóteses explicam esses problemas?”
+
+Ainda NÃO escolha uma causa raiz definitiva e NÃO desenhe a solução.
+
+==================================================
+
+1. PRINCÍPIO CENTRAL
+==================================================
+
+Diferencie rigorosamente:
+
+* fato observado nos dados;
+* inconsistência de dados;
+* padrão estatístico;
+* anomalia;
+* sintoma;
+* problema de negócio;
+* hipótese causal;
+* evidência a favor;
+* evidência contra;
+* informação faltante;
+* causa raiz.
+
+Nunca transforme uma correlação em causalidade.
+
+Nunca trate uma hipótese fornecida no case como conclusão.
+
+Nunca escolha uma causa raiz apenas porque parece intuitiva.
+
+O objetivo é construir hipóteses concorrentes que posteriormente possam ser testadas.
+
+==================================================
+2. RECONSTRUA O “PROBLEMA CENTRAL”
+==================================
+
+Partindo dos achados do Prompt 1, determine quais dimensões do desafio da Vértice parecem estar mais relacionadas:
+
+* rentabilidade;
+* eficiência operacional;
+* qualidade da tomada de decisão.
+
+Explique:
+
+1. O que está acontecendo?
+2. Desde quando?
+3. Qual a magnitude?
+4. Onde acontece?
+5. Em quais produtos/canais/clientes/processos?
+6. Qual o impacto potencial?
+7. Quais fenômenos parecem estar relacionados?
+
+Não escolha ainda a causa raiz.
+
+==================================================
+3. INVESTIGUE AS PRINCIPAIS HIPÓTESES DO CASE
+=============================================
+
+Analise sistematicamente as seguintes linhas de investigação:
+
+A. MARGEM / RENTABILIDADE
+
+* descontos;
+* preço;
+* mix de produtos;
+* margem por produto;
+* margem por canal;
+* frete;
+* devoluções;
+* custos;
+* concentração de vendas em produtos menos rentáveis.
+
+B. MARKETING / AQUISIÇÃO
+
+* CAC;
+* canais;
+* conversão;
+* ticket;
+* recorrência;
+* retenção;
+* qualidade dos clientes adquiridos;
+* relação entre aquisição e margem.
+
+C. OPERAÇÕES / ESTOQUE
+
+* estoque total;
+* estoque por SKU;
+* giro;
+* dias de estoque;
+* estoque parado;
+* concentração de estoque;
+* ruptura;
+* lead time;
+* relação entre estoque e vendas;
+* relação entre estoque e margem.
+
+D. CLIENTES
+
+* segmentação;
+* frequência;
+* ticket;
+* margem;
+* retenção;
+* churn;
+* concentração de receita;
+* diferença de comportamento entre segmentos.
+
+E. CUSTOMER SERVICE
+
+* volume de tickets;
+* motivos;
+* recorrência;
+* relação com devoluções;
+* relação com produtos;
+* oportunidades de automação.
+
+F. GESTÃO / PRODUTIVIDADE
+
+* relatórios manuais;
+* atividades repetitivas;
+* tempo consumido;
+* fragmentação de dados;
+* atraso na tomada de decisão.
+
+Não presuma que todas essas dimensões são relevantes. Determine quais possuem evidência nos dados.
+
+==================================================
+4. INVESTIGAÇÃO ESPECÍFICA: ESTOQUE
+===================================
+
+Existe uma hipótese especialmente importante que deve ser investigada:
+
+> O estoque pode estar desproporcional ao volume de vendas e estar contribuindo para a deterioração da rentabilidade.
+
+Se os dados confirmarem valores próximos a R$18 milhões de faturamento anual e R$350 milhões de estoque, NÃO assuma automaticamente que existe um problema.
+
+Primeiro valide:
+
+* se os valores são da mesma data/período;
+* se estão na mesma unidade;
+* se estoque está contabilizado a custo ou preço de venda;
+* se faturamento é bruto ou líquido;
+* se existem duplicidades;
+* se a granularidade é compatível;
+* se o valor total do estoque pode ser reconstruído a partir dos SKUs;
+* se existe estoque histórico ou apenas estoque atual.
+
+Depois calcule, quando os dados permitirem:
+
+* estoque / faturamento;
+* giro de estoque;
+* dias de estoque;
+* estoque por SKU;
+* participação dos SKUs no estoque;
+* participação dos SKUs nas vendas;
+* estoque por categoria;
+* estoque por margem;
+* estoque por giro.
+
+Investigue especialmente:
+
+> baixo giro + baixa margem + alto valor de estoque.
+
+Determine se existe evidência de que estoque excessivo ou mal alocado pode estar provocando:
+
+* capital imobilizado;
+* necessidade de descontos;
+* deterioração de margem;
+* risco de obsolescência;
+* aumento de custos;
+* desalinhamento entre oferta e demanda.
+
+IMPORTANTE:
+Não conclua que estoque é a causa raiz sem evidência causal suficiente.
+
+==================================================
+5. CONSTRUA UMA ÁRVORE DE PROBLEMAS
+===================================
+
+Construa uma issue tree começando pelo desafio:
+
+“Rentabilidade e eficiência da Vértice estão abaixo do potencial.”
+
+Divida em:
+
+Problemas observados
+↓
+Possíveis mecanismos
+↓
+Hipóteses causais
+↓
+Evidências necessárias para validar/refutar
+
+Evite árvores genéricas.
+
+Cada ramo deve estar relacionado a uma variável que possa ser investigada nos dados.
+
+==================================================
+6. IDENTIFIQUE RELAÇÕES ENTRE AS BASES
+======================================
+
+Procure relações como:
+
+Vendas × Estoque
+Vendas × Margem
+Produto × Estoque × Margem
+Canal × CAC × Receita × Margem
+Cliente × CAC × Recorrência × Margem
+Produto × Devolução × Customer Service
+Produto × Estoque × Desconto
+Canal × Devolução × Margem
+Ticket × Produto × Cliente
+Operação × Receita × Rentabilidade
+
+Para cada relação encontrada, explique:
+
+* o que foi observado;
+* qual hipótese ela gera;
+* qual evidência sustenta;
+* qual evidência contradiz;
+* qual análise adicional é necessária.
+
+==================================================
+7. QUANTIFIQUE O IMPACTO
+========================
+
+Sempre que possível, transforme os achados em impacto econômico.
+
+Exemplos:
+
+* R$ de margem perdida;
+* R$ de estoque parado;
+* % da receita;
+* % da margem;
+* % dos SKUs;
+* % dos clientes;
+* % dos tickets;
+* R$ de capital imobilizado;
+* variação de CAC;
+* variação de margem;
+* variação de giro.
+
+Não invente valores.
+
+Se não for possível calcular, indique exatamente qual informação está faltando.
+
+==================================================
+8. PROCURE CONTRA-EVIDÊNCIAS
+============================
+
+Para cada hipótese relevante, procure deliberadamente evidências que possam refutá-la.
+
+Pergunte:
+
+* Existe algum segmento onde isso não acontece?
+* O fenômeno ocorre apenas em determinado período?
+* O fenômeno pode ser explicado por mix?
+* Existe outra variável que explica melhor o comportamento?
+* A relação permanece quando controlamos por produto/canal/cliente?
+* Existe problema de qualidade de dados que pode gerar o padrão?
+
+Uma hipótese só deve ganhar confiança quando sobreviver a tentativas de refutação.
+
+==================================================
+9. RANKING DE HIPÓTESES PARA INVESTIGAÇÃO
+=========================================
+
+NÃO produza um ranking de “melhores causas”.
+
+Em vez disso, classifique as hipóteses pela necessidade de investigação usando:
+
+* impacto potencial;
+* força da evidência atual;
+* possibilidade de validação com os dados disponíveis;
+* relevância para o desafio;
+* existência de evidências contraditórias.
+
+Use categorias:
+
+* Investigar imediatamente;
+* Investigar em seguida;
+* Monitorar;
+* Baixa evidência atual.
+
+Explique a justificativa.
+
+==================================================
+10. PREPARE A PRÓXIMA ETAPA
+===========================
+
+Para cada hipótese classificada como “Investigar imediatamente”, defina:
+
+1. Pergunta causal;
+2. Métrica principal;
+3. Bases necessárias;
+4. Cruzamento necessário;
+5. Análise estatística/descritiva;
+6. Evidência que confirmaria;
+7. Evidência que refutaria;
+8. Possíveis explicações alternativas.
+
+==================================================
+OUTPUT OBRIGATÓRIO
+==================
+
+Entregue exatamente nesta estrutura:
+
+1. Executive Summary
+
+2. Problema central observado
+
+3. Principais problemas identificados
+
+4. Issue Tree
+
+5. Hipóteses causais
+
+6. Evidências a favor e contra
+
+7. Investigação específica de estoque
+
+8. Cross-analysis entre bases
+
+9. Quantificação dos impactos
+
+10. Hipóteses que precisam ser testadas
+
+11. Evidências faltantes
+
+12. Plano de validação da causa raiz
+
+13. Perguntas que o squad deve discutir no brainstorming
+
+IMPORTANTE:
+
+Não proponha solução tecnológica nesta etapa.
+
+Não escolha a causa raiz definitivamente.
+
+O objetivo é preparar uma investigação rigorosa que permita que a próxima etapa valide ou refute as hipóteses.
