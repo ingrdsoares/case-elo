@@ -1,0 +1,124 @@
+# PROMPT 5 — SOLUÇÃO, ARQUITETURA DE IA E PROTÓTIPO | PROJETO VÉRTICE
+
+## 1. PAPEL E CONTEXTO
+
+Você é o *Chief AI & Technology Officer / Lead AI Solution Architect* de uma consultoria estratégica de ponta, atuando no Projeto Vértice para a Vértice Retail.
+
+Nas etapas anteriores, a squad concluiu um diagnóstico analítico rigoroso baseado nas 5 bases do Data Room (`vendas.csv`, `estoque.csv`, `atendimento.csv`, `clientes.csv` e `marketing.csv`):
+
+* **Fato 1 (Asfixia de Capital de Giro por Superestocagem):** A Vértice faturou R$ 20,53M brutos (CMV anual de R$ 8,28M), mas acumulou **R$ 348,70 milhões em estoque físico a custo** (1,67 milhão de peças), gerando uma cobertura irracional de **42,1 anos de estoque** (giro mediano de 0,06x). A categoria Moda concentra 864k peças (51,7%), e **82 SKUs estão completamente parados** com zero vendas há 13 meses, imobilizando R$ 6,68M de caixa. O custo de oportunidade financeiro (CDI a 11% a.a.) consome **R$ 38,3 milhões anuais**.
+* **Fato 2 (Erosão Pós-Venda em Devoluções Operacionais):** Taxa de devolução de **14,87% (4.127 pedidos)**, sacrificando **R$ 1,52 milhão em margem de contribuição**. Longe de ser mero arrependimento, **69,6% das devoluções decorrem de falhas evitáveis**: *Produto com Defeito (25,2%)*, *Tamanho Errado (24,8%)* e *Atraso na Entrega (19,6%)*.
+* **Fato 3 (Gargalo e Custo de Atendimento Reativo):** O SAC processou **35.841 chamados (R$ 532.260 de custo operacional)** com tempo médio de resposta de 135 minutos. **30,0% dos chamados (10.765 tickets)** limitam-se a perguntas de *"Onde está meu pedido?"* (R$ 159.660 gastos com atendentes humanos para consultas de rastreio).
+* **Fato 4 (Vazamento de Margem em Checkout):** 491 pedidos tiveram margem negativa (média de -17,2%) devido a descontos >20% combinados com frete subsidiado.
+
+O desafio agora é responder à diretoria:
+> *"Qual solução tecnológica de Inteligência Artificial e Analytics devemos implementar para transformar essas dores em alavancas de rentabilidade e produtividade nos próximos 90 dias?"*
+
+---
+
+## 2. OBJETIVO DO PROMPT 5
+
+Você deve conceber a arquitetura completa da solução e construir o protótipo funcional demonstrável. 
+
+A squad definiu a estratégia recomendada: uma **Solução Dual de Alto Impacto** combinando:
+1. **Frente 1 (Quick Win Operacional — Módulo B): Classificador Inteligente e Agente Resolutivo de Atendimento ao Cliente (WhatsApp / Chatbot)**.
+2. **Frente 2 (Impacto Estrutural de Caixa e Margem — Módulo C): Motor de Priorização de Margem e Desmobilização de Estoque Parado**.
+
+---
+
+## 3. ARQUITETURA DA SOLUÇÃO (SYSTEM ARCHITECTURE)
+
+Desenhe a arquitetura da solução dividida em 4 camadas estruturadas:
+
+1. **Camada de Dados & Ingestão (Data Layer):** Conexão com o banco transacional de pedidos (`vendas`), ERP/WMS (`estoque`), CRM (`clientes`) e APIs de transportadoras logísticas.
+2. **Camada de Inteligência e Agentes (Agentic & Analytics Layer):**
+   * Agente de Atendimento com NLP/LLM para extração de intenções, análise de sentimento e raciocínio de resolução (Function Calling).
+   * Motor Analítico de Catálogo para cálculo contínuo de Sell-Through, Giro e Margem de Contribuição Líquida.
+3. **Camada de Orquestração & Regras de Negócio (Orchestration & Guardrails):**
+   * Verificação de travas de segurança (preço de venda nunca abaixo do custo contábil; transbordo para operador humano N2 quando risco de churn for Alto).
+4. **Camada de Aplicação & Interface (Presentation Layer):**
+   * Interface conversacional para o cliente final (WhatsApp Business API / Webchat).
+   * Painel de Gestão (Dashboard) para os Diretores acompanharem a desmobilização de estoque e métricas de SAC.
+
+Inclua um diagrama em formato **Mermaid (`flowchart TD`)** ilustrando o fluxo de dados entre os componentes.
+
+---
+
+## 4. ESPECIFICAÇÃO TÉCNICA DO MÓDULO B (AGENTE DE ATENDIMENTO)
+
+O agente deve processar mensagens não estruturadas dos clientes e executar ações automáticas:
+
+### 4.1 Pipeline de Processamento
+* **Entrada:** `texto_cliente`, `order_id`, `canal_entrada`, histórico recente.
+* **Tarefas do Modelo:**
+  1. *Classificação de Intenção:* `Rastreamento`, `Defeito`, `Troca de Tamanho`, `Dúvida Técnica`, `Pagamento`, `Elogio`, `Outros`.
+  2. *Análise de Sentimento:* `Positivo`, `Neutro`, `Negativo`, `Crítico/Irritado`.
+  3. *Avaliação de Risco de Churn:* `Baixo`, `Médio`, `Alto`.
+  4. *Seleção de Ação (Tools/Function Calling):*
+     * `consultar_status_transportadora(order_id)`: Retorna localização, prazo estimado e link de tracking.
+     * `gerar_voucher_logistica_reversa(order_id, motivo)`: Dispara etiqueta dos Correios/transportadora para troca/defeito.
+     * `escalar_operador_humano_n2(ticket_id, resumo, prioridade)`: Transbordo com contexto resumido.
+
+### 4.2 Prompt de Sistema (System Prompt)
+Elabore o prompt de sistema completo, profissional e à prova de falhas para o LLM. O prompt deve conter:
+* Persona e tom de voz (empático, ágil, objetivo).
+* Instruções estritas de uso de ferramentas.
+* Diretrizes anti-alucinação: proibido inventar prazos que não constem na API de entrega.
+* Formato de saída estrito em JSON para integração com o back-end, acompanhado da mensagem final humanizada ao cliente.
+
+### 4.3 Casos de Teste Demonstrativos
+Apresente 3 exemplos concretos de execução com entradas típicas do dataset da Vértice:
+* *Caso A (Rastreio básico - 30% da dor):* Cliente ansioso perguntando onde está o pedido.
+* *Caso B (Produto com defeito - 25% das devoluções):* Cliente irritado relatando que a peça chegou rasgada.
+* *Caso C (Troca de tamanho - 25% das devoluções):* Cliente solicitando troca por tamanho maior.
+
+---
+
+## 5. ESPECIFICAÇÃO TÉCNICA DO MÓDULO C (MOTOR DE MARGEM E ESTOQUE)
+
+O motor deve processar os 5.000 SKUs da base e os 27.759 pedidos para apoiar as decisões de Compras e Comercial:
+
+### 5.1 Matriz de Risco × Retorno do Catálogo (4 Quadrantes)
+Defina a lógica algorítmica para classificar cada produto:
+* **Quadrante 1 (Giro Baixo & Margem Alta):** "Joias Escondidas". Ação: Dar destaque na vitrine da home e campanhas de redes sociais sem queimar desconto.
+* **Quadrante 2 (Giro Baixo & Margem Baixa - 82 SKUs sem venda):** "Estoque Crítico / Risco de Obsolescência". Ação: Liquidação acelerada em canal Outlet / Bundles com trava de desconto no custo unitário (`preco_venda >= custo_unitario`).
+* **Quadrante 3 (Giro Alto & Margem Baixa):** "Vampiros de Margem". Ação: Reduzir ou zerar cupom de desconto promocional e repactuar taxa de frete.
+* **Quadrante 4 (Giro Alto & Margem Alta):** "Campeões de Rentabilidade". Ação: Prioridade de abastecimento e estoque de segurança.
+
+### 5.2 Algoritmo de Trava de Checkout contra Margem Negativa
+Especifique a função em Python que avalia o carrinho em tempo real:
+$$\text{Margem Estimada} = \text{Receita Bruta} - \text{Descontos} - \text{Custo dos Produtos} - \text{Custo de Frete Real}$$
+Se $\text{Margem Estimada} < 0$, o sistema ajusta dinamicamente a regra de frete ou limita o cupom, impedindo os 491 pedidos deficitários identificados no histórico.
+
+---
+
+## 6. CÓDIGO DO PROTÓTIPO EM PYTHON (PRONTO PARA EXECUÇÃO)
+
+Escreva um script Python modular, limpo e auto-contido contendo:
+1. Classe `CustomerServiceAgent`: implementando a lógica de triagem, simulação de chamadas a ferramentas (APIs) e resposta formatada.
+2. Classe `MarginAndInventoryOptimizer`: carregando dados de vendas e estoque, classificando SKUs nos quadrantes e demonstrando a desmobilização dos SKUs parados.
+3. Função `main()` que executa os testes e imprime os resultados na tela de forma clara e visual para a banca avaliadora.
+
+---
+
+## 7. GOVERNANÇA, RISCOS DE IA E MITIGAÇÃO
+
+Estruture uma tabela com os principais riscos da solução e as medidas de controle:
+* Alucinação de IA e promessa indevida de prazos/indenizações.
+* Privacidade de dados pessoais e conformidade com a LGPD.
+* Risco de canibalização de vendas por descontos descontrolados.
+* Adoção pelos operadores humanos de atendimento e compradores de suprimentos.
+
+---
+
+## 8. FORMATO OBRIGATÓRIO DA RESPOSTA
+
+Entregue o resultado nesta sequência:
+1. **Executive Summary da Solução Proposta**
+2. **Arquitetura da Solução e Diagrama Mermaid**
+3. **Módulo B: Especificação do Agente de Atendimento e System Prompt**
+4. **Módulo C: Algoritmo do Motor de Margem e Estoque**
+5. **Código Completo do Protótipo em Python**
+6. **Resultados e Casos de Teste Executados**
+7. **Matriz de Riscos de IA e Governança**
+8. **Transição para o Prompt 6 (Business Case & Roadmap)**

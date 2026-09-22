@@ -18,5 +18,5 @@ Thumbs.db
 *.tmp
 *.log
 
-# Prompts brutos de instrução
-prompt*.txt
+# Prompts brutos na raiz
+/prompt*.txt

@@ -68,20 +68,43 @@ case-elo/
 ├── Case Vértice 1.html                        # Briefing executivo interativo do case
 ├── sugestoes_prompts_5_e_6.md                 # Recomendações e arquitetura para Prompts 5 e 6
 │
-├── diagnostico/                               # Relatórios dos Prompts 1 a 4
+├── prompts/                                   # Comandos originais dos Prompts 1 a 5
+│   ├── prompt1.txt                            # Prompt 1: Data Audit e Exploração
+│   ├── prompt2.txt                            # Prompt 2: Investigação e Hipóteses
+│   ├── prompt3.txt                            # Prompt 3: Teste de Hipóteses
+│   ├── prompt4.txt                            # Prompt 4: Diagnóstico Executivo
+│   ├── prompt5.txt                            # Prompt 5: Solução, IA e Protótipo
+│   └── 05_pesquisa_e_resultado_prompt5.md     # Relatório técnico com a pesquisa do Prompt 5
+│
+├── diagnostico/                               # Relatórios formais dos Prompts 1 a 5
 │   ├── 01_prompt1_data_audit.md               # Prompt 1: Auditoria e Inventário de Dados
 │   ├── 02_prompt2_investigacao_hipoteses.md   # Prompt 2: Investigação e Issue Tree
 │   ├── 03_prompt3_teste_hipoteses_causa_raiz.md # Prompt 3: Teste Causal e Refutação
-│   └── 04_prompt4_sintese_executiva.md        # Prompt 4: Síntese e Problema de Negócio
+│   ├── 04_prompt4_sintese_executiva.md        # Prompt 4: Síntese e Problema de Negócio
+│   └── 05_prompt5_solucao_prototipo.md        # Prompt 5: Solução, Arquitetura e Protótipo
 │
-├── scripts/                                   # Scripts de automação e modelagem
-│   └── analise_vertice.py                     # Pipeline determinístico de cálculos e visualizações
+├── apres/                                     # Material completo da Apresentação Final (Pitch 23/09)
+│   ├── apresentacao_pitch_vertice_grupo18.pptx # Deck oficial com os 11 slides
+│   ├── roteiro_falas_pedro.txt                # Script de falas do Pedro (Slides 1 a 5)
+│   ├── roteiro_falas_ingrid.txt               # Script de falas da Ingrid (Slides 6 a 11)
+│   └── roteiro_integrado_pitch_pedro_e_ingrid.txt # Roteiro consolidado de ensaio da dupla
+│
+├── scripts/                                   # Scripts determinísticos e protótipo de IA
+│   ├── analise_vertice.py                     # Pipeline de cálculo de KPIs e gráficos
+│   ├── prototipo_ia_vertice.py                # Protótipo funcional executável da solução de IA
+│   └── prototipo_solucao_vertice.py           # Módulos do Agente de SAC e Motor de Margem
 │
 ├── charts/                                    # Gráficos analíticos gerados
 │   ├── chart_estoque_vs_vendas.png
 │   ├── chart_motivos_devolucao.png
 │   ├── chart_atendimento_tickets.png
 │   └── chart_margem_desconto_canal.png
+│
+├── materiais_complementares/                  # Relatório executivo consolidado (.pdf, .docx, .xlsx, .md)
+│   ├── RELATORIO_EXECUTIVO_VERTICE_GRUPO18.pdf
+│   ├── RELATORIO_EXECUTIVO_VERTICE_GRUPO18.docx
+│   ├── RELATORIO_EXECUTIVO_VERTICE_GRUPO18.md
+│   └── resumo_executivo_vertice_grupo18.xlsx
 │
 ├── atendimento.csv                            # Base transacional de tickets de suporte
 ├── clientes.csv                               # Base cadastral e RFM de clientes
