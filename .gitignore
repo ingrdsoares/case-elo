@@ -17,3 +17,6 @@ Thumbs.db
 # Arquivos temporários
 *.tmp
 *.log
+
+# Prompts brutos de instrução
+prompt*.txt
