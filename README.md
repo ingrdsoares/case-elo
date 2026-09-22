@@ -34,11 +34,11 @@ A squad adotou uma abordagem analítico-consultiva estruturada em seis etapas en
 
 ```mermaid
 flowchart LR
-    P1["Prompt 1<br><b>Data Audit & Exploração</b>"] --> P2["Prompt 2<br><b>Investigação & Hipóteses</b>"]
-    P2 --> P3["Prompt 3<br><b>Teste de Causalidade</b>"]
-    P3 --> P4["Prompt 4<br><b>Diagnóstico Executivo</b>"]
-    P4 --> P5["Prompt 5<br><b>Solução IA & Protótipo</b>"]
-    P5 --> P6["Prompt 6<br><b>Business Case & Roadmap</b>"]
+    P1["Prompt 1: Data Audit e Exploração"] --> P2["Prompt 2: Investigação e Hipóteses"]
+    P2 --> P3["Prompt 3: Teste de Causalidade"]
+    P3 --> P4["Prompt 4: Diagnóstico Executivo"]
+    P4 --> P5["Prompt 5: Solução IA e Protótipo"]
+    P5 --> P6["Prompt 6: Business Case e Roadmap"]
 ```
 
 1. **[Prompt 1 — Data Audit e Exploração Inicial](diagnostico/01_prompt1_data_audit.md):** Auditoria e conciliação das 5 bases (`vendas.csv`, `estoque.csv`, `atendimento.csv`, `marketing.csv` e `clientes.csv`), matriz de chaves e identificação de anomalias cadastrais e de pipeline.
@@ -112,25 +112,23 @@ Todos os valores do Business Case foram calculados de forma determinística sobr
 ## 🗓️ Roadmap de Implementação 30-60-90 Dias
 
 ```mermaid
-gantt
-    title Roadmap de Implementação — Projeto Vértice (90 dias após 23/09)
-    dateFormat YYYY-MM-DD
-    axisFormat %d/%m
-
-    section Fase 1 - Estancamento (Dias 1-30)
-    Trava de margem no checkout           :done,   f1a, 2026-09-24, 7d
-    Agente IA WhatsApp (rastreio)         :active, f1b, 2026-09-24, 21d
-    Notificacao proativa de rastreio      :        f1c, 2026-10-01, 14d
-
-    section Fase 2 - Otimizacao (Dias 31-60)
-    Motor de margem / liquidacao 82 SKUs  :        f2a, 2026-10-24, 21d
-    Guia inteligente de medidas           :        f2b, 2026-10-24, 14d
-    Repactuacao fornecedores criticos     :        f2c, 2026-11-01, 21d
-
-    section Fase 3 - Governanca (Dias 61-90)
-    Modelo preditivo compras (ERP/WMS)    :        f3a, 2026-11-23, 21d
-    Dashboard executivo automatizado      :        f3b, 2026-11-23, 14d
-    Expansao do agente (vendas assistidas):        f3c, 2026-12-01, 21d
+flowchart TD
+    subgraph F1["Fase 1: Estancamento (Dias 1-30)"]
+        A1["Trava de margem no checkout"]
+        A2["Agente IA WhatsApp para rastreio"]
+        A3["Notificação proativa de despacho"]
+    end
+    subgraph F2["Fase 2: Otimização (Dias 31-60)"]
+        B1["Motor de margem e liquidação 82 SKUs"]
+        B2["Guia inteligente de medidas"]
+        B3["Repactuação fornecedores críticos"]
+    end
+    subgraph F3["Fase 3: Governança (Dias 61-90)"]
+        C1["Modelo preditivo compras ERP e WMS"]
+        C2["Dashboard executivo automatizado"]
+        C3["Expansão do agente para vendas assistidas"]
+    end
+    F1 --> F2 --> F3
 ```
 
 * **Fase 1 (Dias 1–30) — Estancamento & Quick Wins:** Subida imediata da trava algorítmica no checkout e do Agente de IA para dúvidas de rastreio no WhatsApp. Disparo de notificações proativas de despacho. Meta: zero novos pedidos deficitários e -50% no tempo de resposta do SAC.
